@@ -1,0 +1,12 @@
+<!DOCTYPE html> <html> <head> <meta charset=utf-8> <title>p5 monday</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel="shortcut icon" href=/favicon.b25e58c4.ico> <link rel=apple-touch-icon href=/apple-touch-icon.9727d3c2.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/vendor.d349c977.css> <link rel=stylesheet href=styles/main.cfe8ba92.css> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>  <body> <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <div id=map-canvas></div> <div class=container-fluid> <div class=row> <div class=col-sm-8></div> <div id=venue-col class="col-sm-4 pull-right"> <div id=filter-input class=input-group> <span class=input-group-addon id=basic-addon1 data-bind="click: toggleVenueList"><i class="glyphicon glyphicon glyphicon-list"></i></span> <input type=text class=form-control placeholder="Venue Search" aria-describedby=basic-addon1 data-bind="textInput: search"> </div> <div data-bind="visible: venueListVisible"> <ul class=list-group id=venue-list data-bind=" foreach: venues"> <li class=list-group-item id=list-item data-bind="visible: isVisible, click: $parent.click"> <span data-bind="text: fs.name"></span> </li> </ul> </div> </div> </div> </div> <!--            <div>
+                <ul id="venue-list-detail" class="list-group list-unstyled text-left" data-bind="foreach: venues" >
+                   <li id="venue" class="list-group-item"
+                      data-bind="visible: isVisible,click: $parent.selectVenue">
+                        <span data-bind="text: fs.name "></span>
+                        <span class="badge pull-right" data-bind="text: photoInfo().length"></span>
+                    </li>
+                </ul>
+              </div>
+            </div> --> <script src=scripts/vendor.14e86c8d.js></script> <script src=scripts/plugins.19a1d77b.js></script> <script src=scripts/main.4a37301c.js></script>  
